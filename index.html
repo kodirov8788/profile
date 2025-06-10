@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mukhammadali Kodirov - Resume</title>
+    <style>
+      @media print {
+        body {
+          margin: 0;
+          font-size: 12px;
+        }
+        .no-print {
+          display: none;
+        }
+        .page-break {
+          page-break-before: always;
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.5;
+        color: #333;
+        max-width: 8.5in;
+        margin: 0 auto;
+        padding: 0.5in;
+        background: white;
+      }
+
+      .header {
+        text-align: center;
+        border-bottom: 3px solid #2c5aa0;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+      }
+
+      .name {
+        font-size: 32px;
+        font-weight: bold;
+        color: #2c5aa0;
+        margin-bottom: 8px;
+        letter-spacing: 1px;
+      }
+
+      .title {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 15px;
+        font-weight: 500;
+      }
+
+      .contact-info {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 25px;
+        font-size: 14px;
+      }
+
+      .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #555;
+      }
+
+      .contact-icon {
+        font-size: 16px;
+        color: #2c5aa0;
+      }
+
+      .section {
+        margin-bottom: 30px;
+        page-break-inside: avoid;
+      }
+
+      .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #2c5aa0;
+        border-bottom: 2px solid #e0e0e0;
+        padding-bottom: 8px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .summary {
+        text-align: justify;
+        font-size: 15px;
+        line-height: 1.7;
+        color: #555;
+        background: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #2c5aa0;
+      }
+
+      .experience-item,
+      .education-item {
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #f0f0f0;
+        page-break-inside: avoid;
+      }
+
+      .experience-item:last-child,
+      .education-item:last-child {
+        border-bottom: none;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 12px;
+      }
+
+      .job-left {
+        flex: 1;
+      }
+
+      .job-right {
+        text-align: right;
+      }
+
+      .job-title {
+        font-weight: 600;
+        font-size: 16px;
+        color: #2c5aa0;
+        margin-bottom: 4px;
+      }
+
+      .company {
+        font-weight: 600;
+        font-size: 15px;
+        color: #333;
+      }
+
+      .duration {
+        font-size: 14px;
+        color: #666;
+        font-weight: 500;
+        margin-bottom: 2px;
+      }
+
+      .location {
+        font-size: 13px;
+        color: #888;
+      }
+
+      .job-description {
+        margin-top: 12px;
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: justify;
+        color: #555;
+      }
+
+      .skills-section {
+        background: #f8f9fa;
+        padding: 25px;
+        border-radius: 8px;
+        margin-bottom: 30px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 15px;
+      }
+
+      .skill-category {
+        background: white;
+        padding: 15px;
+        border-radius: 6px;
+        border-left: 4px solid #2c5aa0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .skill-category h4 {
+        margin: 0 0 10px 0;
+        color: #2c5aa0;
+        font-size: 15px;
+        font-weight: 600;
+      }
+
+      .skill-list {
+        font-size: 14px;
+        color: #555;
+        line-height: 1.4;
+      }
+
+      .certifications-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 15px;
+      }
+
+      .cert-item {
+        background: #f8f9fa;
+        padding: 12px 15px;
+        border-radius: 6px;
+        font-size: 14px;
+        border-left: 3px solid #2c5aa0;
+      }
+
+      .education-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 8px;
+      }
+
+      .degree {
+        font-weight: 600;
+        font-size: 15px;
+        color: #2c5aa0;
+      }
+
+      .institution {
+        font-weight: 500;
+        font-size: 14px;
+        color: #333;
+        margin-bottom: 4px;
+      }
+
+      .field-of-study {
+        font-size: 13px;
+        color: #666;
+      }
+
+      .download-btn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background: #2c5aa0;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 500;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(44, 90, 160, 0.3);
+        transition: all 0.3s ease;
+      }
+
+      .download-btn:hover {
+        background: #1e3d6f;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(44, 90, 160, 0.4);
+      }
+
+      @media (max-width: 768px) {
+        body {
+          padding: 0.3in;
+        }
+
+        .contact-info {
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .job-header {
+          flex-direction: column;
+        }
+
+        .job-right {
+          text-align: left;
+          margin-top: 8px;
+        }
+
+        .skills-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .download-btn {
+          position: relative;
+          top: auto;
+          right: auto;
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button class="download-btn no-print" onclick="window.print()">
+      📄 Download PDF
+    </button>
+
+    <div class="header">
+      <div class="name">Mukhammadali Kodirov</div>
+      <div class="title">Software Engineer</div>
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span>Kobe, Hyogo, Japan</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📱</span>
+          <span>+817085830492</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <span>kodirov8788@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🔗</span>
+          <span>linkedin.com/in/kodirov-dev</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Summary</div>
+      <div class="summary">
+        A Software Engineer with expertise in JavaScript technologies,
+        particularly Node.js, Nest.js, and Next.js specializing in backend and
+        frontend development and web services.CI/CD implementation, combination
+        of technical skills and cross-cultural experience
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-section">
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Backend Development</h4>
+            <div class="skill-list">
+              Node.js, Express.js, Nest.js, API Gateway Configuration, Database
+              Management
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Frontend Development</h4>
+            <div class="skill-list">
+              JavaScript, React.js, Next.js, HTML5, CSS3, Responsive Design,
+              Cross-browser Compatibility
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>DevOps & Tools</h4>
+            <div class="skill-list">
+              CI/CD, Serverless Deployment, Git, GitHub, Testing & Debugging,
+              Code Reviews
+            </div>
+          </div>
+          <div class="skill-category">
+            <h4>Additional Skills</h4>
+            <div class="skill-list">
+              Python, Data Science, Team Leadership, Cross-cultural
+              Communication, Project Management
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Professional Experience</div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div class="job-left">
+            <div class="job-title">Software Engineer</div>
+            <div class="company">Quinque Inc.</div>
+          </div>
+          <div class="job-right">
+            <div class="duration">January 2025 - Present (6 months)</div>
+            <div class="location">Kobe, Hyogo, Japan</div>
+          </div>
+        </div>
+        <div class="job-description">
+          Backend Software Engineer at Quinque, a Japanese company specializing
+          in innovative websites and mobile applications. Responsible for
+          server-side development, database architecture, and system
+          optimization to ensure seamless application performance. Collaborate
+          with cross-functional teams of designers, product managers, and
+          developers to build scalable digital tools. Focus on solving complex
+          technical challenges, implementing best practices, and maintaining
+          high-quality code standards while contributing to the company's
+          mission of creating user-friendly and impactful digital solutions.
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div class="job-left">
+            <div class="job-title">Backend Developer</div>
+            <div class="company">Navana Inc.</div>
+          </div>
+          <div class="job-right">
+            <div class="duration">
+              January 2024 - January 2025 (1 year 1 month)
+            </div>
+            <div class="location">Tashkent, Uzbekistan</div>
+          </div>
+        </div>
+        <div class="job-description">
+          Enhanced user experiences through development of intuitive software
+          solutions, focusing on backend development and continuous
+          integration/continuous deployment (CI/CD) management. Ensured
+          applications remained accessible, reliable, and user-friendly through
+          implementation of efficient deployment pipelines. Specialized in
+          solving complex technical problems with clear, scalable solutions,
+          contributing to the company's mission of making technology accessible
+          and enjoyable for all users.
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div class="job-left">
+            <div class="job-title">Frontend Developer</div>
+            <div class="company">Binary</div>
+          </div>
+          <div class="job-right">
+            <div class="duration">March 2023 - December 2023 (10 months)</div>
+            <div class="location">Tashkent, Uzbekistan</div>
+          </div>
+        </div>
+        <div class="job-description">
+          Developed and maintained responsive, user-friendly web applications
+          using modern frontend frameworks including JavaScript and React.
+          Collaborated with designers, product managers, and backend developers
+          to ensure seamless integration between frontend and backend systems.
+          Conducted comprehensive code reviews, testing, and debugging to
+          maintain high-quality, bug-free code. Stayed current with emerging
+          frontend technologies and contributed to the company's technical
+          knowledge base. Provided mentorship to junior developers and ensured
+          all applications met accessibility, security, and performance
+          standards.
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div class="job-left">
+            <div class="job-title">Web Developer & Team Lead</div>
+            <div class="company">Algorithm Learning Center</div>
+          </div>
+          <div class="job-right">
+            <div class="duration">
+              May 2021 - December 2023 (2 years 8 months)
+            </div>
+            <div class="location">Namangan, Uzbekistan</div>
+          </div>
+        </div>
+        <div class="job-description">
+          Led a development team in creating educational websites and
+          interactive learning tools. Successfully completed multiple projects
+          that enhanced student learning experiences using HTML, CSS,
+          JavaScript, React.js, and Node.js. Developed responsive websites and
+          data management systems that significantly improved student engagement
+          and understanding. Achieved remarkable results including doubled
+          student tool usage and improved academic performance, establishing
+          Algorithm Education Center as a premier destination for coding
+          education.
+        </div>
+      </div>
+
+      <div class="experience-item">
+        <div class="job-header">
+          <div class="job-left">
+            <div class="job-title">Customer Service Manager</div>
+            <div class="company">Phobos Japan</div>
+          </div>
+          <div class="job-right">
+            <div class="duration">
+              May 2017 - December 2019 (2 years 8 months)
+            </div>
+            <div class="location">Tokyo, Japan</div>
+          </div>
+        </div>
+        <div class="job-description">
+          Specialized in employment support for the Uzbek community in Japan.
+          Developed comprehensive guides covering local employment laws,
+          workplace cultural norms, and language support services. Collaborated
+          with local businesses to identify suitable job opportunities and
+          ensure optimal matching between employer needs and job seeker skills.
+          Led a culturally competent customer service team, established
+          partnerships with Uzbek cultural associations, and implemented
+          feedback mechanisms to continuously improve service delivery.
+          Successfully facilitated effective job placements by leveraging deep
+          understanding of both Japanese business culture and Uzbek community
+          needs.
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Education</div>
+
+      <div class="education-item">
+        <div class="education-header">
+          <div>
+            <div class="degree">Bachelor's Degree</div>
+            <div class="institution">Andijan State University</div>
+            <div class="field-of-study">
+              Informatics and Information Technologies
+            </div>
+          </div>
+          <div class="duration">September 2020 - June 2024</div>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div class="education-header">
+          <div>
+            <div class="degree">Japanese Language Studies</div>
+            <div class="institution">Human Academy Japan</div>
+            <div class="field-of-study">Japanese Language & Culture</div>
+          </div>
+          <div class="duration">January 2017 - March 2018</div>
+        </div>
+      </div>
+
+      <div class="education-item">
+        <div class="education-header">
+          <div>
+            <div class="degree">Diploma</div>
+            <div class="institution">Design and Building Technical College</div>
+            <div class="field-of-study">
+              Information Systems & Technologies, Computer Systems Networking
+              and Telecommunications
+            </div>
+          </div>
+          <div class="duration">September 2012 - June 2015</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Certifications</div>
+      <div class="certifications-grid">
+        <div class="cert-item">
+          Application Development using Microservices and Serverless
+        </div>
+        <div class="cert-item">Getting Started with Git and GitHub</div>
+        <div class="cert-item">Python for Data Science, AI & Development</div>
+        <div class="cert-item">
+          Developing Back-End Apps with Node.js and Express
+        </div>
+        <div class="cert-item">Full Stack Software Developer Assessment</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">Languages</div>
+      <div class="skills-section">
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4>Uzbek</h4>
+            <div class="skill-list">Native</div>
+          </div>
+          <div class="skill-category">
+            <h4>English</h4>
+            <div class="skill-list">Professional Working Proficiency</div>
+          </div>
+          <div class="skill-category">
+            <h4>Japanese</h4>
+            <div class="skill-list">JLPT N3 Level</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
