@@ -11,12 +11,12 @@ import {
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBWXDvOhHfz7wwNS2YRxIjJh8rEnn-DWOc",
-  authDomain: "profile-167df.firebaseapp.com",
-  projectId: "profile-167df",
-  storageBucket: "profile-167df.firebasestorage.app",
-  messagingSenderId: "29979722821",
-  appId: "1:29979722821:web:ee5e2a25c6919d83998f2c",
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
 // Initialize Firebase
