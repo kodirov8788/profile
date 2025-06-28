@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Hi, I'm",
+    "subtitle": "Full Stack Developer",
+    "description": "I create beautiful and functional web applications with modern technologies",
+    "cta": "Get In Touch",
+    "scroll": "Scroll Down"
+  },
+  "about": {
+    "title": "About Me",
+    "subtitle": "Passionate developer with expertise in modern web technologies",
+    "description": "I'm a full-stack developer with over 5 years of experience building web applications. I specialize in React, Next.js, Node.js, and modern web technologies.",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education"
+  },
+  "projects": {
+    "title": "My Projects",
+    "subtitle": "Some of my recent work",
+    "viewProject": "View Project",
+    "viewCode": "View Code",
+    "addProject": "Add New Project",
+    "editProject": "Edit Project",
+    "deleteProject": "Delete Project"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Let's work together",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "location": "Location",
+    "phone": "Phone"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts and insights",
+    "readMore": "Read More",
+    "addPost": "Add New Post",
+    "editPost": "Edit Post",
+    "deletePost": "Delete Post"
+  },
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "filter": "Filter",
+    "sort": "Sort",
+    "language": "Language"
+  },
+  "languages": {
+    "uz": "O'zbekcha",
+    "en": "English",
+    "ru": "Русский",
+    "ja": "日本語"
+  }
+} 

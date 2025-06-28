@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "home": "Bosh Sahifa",
+    "about": "Haqida",
+    "projects": "Loyihalar",
+    "contact": "Aloqa",
+    "blog": "Blog"
+  },
+  "hero": {
+    "title": "Salom, men",
+    "subtitle": "Full Stack Dasturchi",
+    "description": "Men zamonaviy texnologiyalar bilan chiroyli va funksional veb-ilovalar yarataman",
+    "cta": "Bog'lanish",
+    "scroll": "Pastga Aylantiring"
+  },
+  "about": {
+    "title": "Men Haqida",
+    "subtitle": "Zamonaviy veb texnologiyalari bo'yicha tajribaga ega ishtiyoqli dasturchi",
+    "description": "Men 5 yildan ortiq tajribaga ega full-stack dasturchiman. Veb-ilovalar yaratishda ixtisoslashganman. React, Next.js, Node.js va zamonaviy veb texnologiyalarida ixtisoslashganman.",
+    "skills": "Ko'nikmalar",
+    "experience": "Tajriba",
+    "education": "Ta'lim"
+  },
+  "projects": {
+    "title": "Mening Loyihalarim",
+    "subtitle": "Mening so'nggi ishlarimdan ba'zilari",
+    "viewProject": "Loyihani Ko'rish",
+    "viewCode": "Kodni Ko'rish",
+    "addProject": "Yangi Loyiha Qo'shish",
+    "editProject": "Loyihani Tahrirlash",
+    "deleteProject": "Loyihani O'chirish"
+  },
+  "contact": {
+    "title": "Bog'lanish",
+    "subtitle": "Keling, birgalikda ishlaymiz",
+    "name": "Ism",
+    "email": "Email",
+    "message": "Xabar",
+    "send": "Xabar Yuborish",
+    "location": "Manzil",
+    "phone": "Telefon"
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Fikrlar va tushunchalar",
+    "readMore": "Ko'proq O'qish",
+    "addPost": "Yangi Post Qo'shish",
+    "editPost": "Postni Tahrirlash",
+    "deletePost": "Postni O'chirish"
+  },
+  "common": {
+    "loading": "Yuklanmoqda...",
+    "save": "Saqlash",
+    "cancel": "Bekor Qilish",
+    "delete": "O'chirish",
+    "edit": "Tahrirlash",
+    "add": "Qo'shish",
+    "search": "Qidirish",
+    "filter": "Filtrlash",
+    "sort": "Saralash",
+    "language": "Til"
+  },
+  "languages": {
+    "uz": "O'zbekcha",
+    "en": "English",
+    "ru": "Русский",
+    "ja": "日本語"
+  }
+} 

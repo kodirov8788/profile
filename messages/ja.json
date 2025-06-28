@@ -1,0 +1,69 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "about": "私について",
+    "projects": "プロジェクト",
+    "contact": "お問い合わせ",
+    "blog": "ブログ"
+  },
+  "hero": {
+    "title": "こんにちは、私は",
+    "subtitle": "フルスタック開発者",
+    "description": "最新技術で美しく機能的なウェブアプリケーションを作成します",
+    "cta": "お問い合わせ",
+    "scroll": "下にスクロール"
+  },
+  "about": {
+    "title": "私について",
+    "subtitle": "最新のウェブ技術に精通した情熱的な開発者",
+    "description": "私は5年以上の経験を持つフルスタック開発者です。ウェブアプリケーションの構築に特化しており、React、Next.js、Node.js、最新のウェブ技術を専門としています。",
+    "skills": "スキル",
+    "experience": "経験",
+    "education": "教育"
+  },
+  "projects": {
+    "title": "私のプロジェクト",
+    "subtitle": "最近の作品の一部",
+    "viewProject": "プロジェクトを見る",
+    "viewCode": "コードを見る",
+    "addProject": "新しいプロジェクトを追加",
+    "editProject": "プロジェクトを編集",
+    "deleteProject": "プロジェクトを削除"
+  },
+  "contact": {
+    "title": "お問い合わせ",
+    "subtitle": "一緒に働きましょう",
+    "name": "名前",
+    "email": "メール",
+    "message": "メッセージ",
+    "send": "メッセージを送信",
+    "location": "場所",
+    "phone": "電話"
+  },
+  "blog": {
+    "title": "ブログ",
+    "subtitle": "考えと洞察",
+    "readMore": "続きを読む",
+    "addPost": "新しい投稿を追加",
+    "editPost": "投稿を編集",
+    "deletePost": "投稿を削除"
+  },
+  "common": {
+    "loading": "読み込み中...",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "delete": "削除",
+    "edit": "編集",
+    "add": "追加",
+    "search": "検索",
+    "filter": "フィルター",
+    "sort": "並び替え",
+    "language": "言語"
+  },
+  "languages": {
+    "uz": "O'zbekcha",
+    "en": "English",
+    "ru": "Русский",
+    "ja": "日本語"
+  }
+} 
